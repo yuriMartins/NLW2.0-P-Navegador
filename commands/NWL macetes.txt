@@ -1,0 +1,37 @@
+Criar projeto: yarn crate rect-app web --template typescript ou npx create-react-app web --template typescript 
+
+programa que modela todo o front-end whimsical
+
+p/ contruir uma API Rest/Full pasta server
+
+npm init -y
+
+criar a pasta server, dentro dela server.js e logo após npm install tipescript -D (isso pode resolver npm install ts-node-dev -D)
+npx tsc --init
+
+no tsconfig, muda para "target": "es2017",
+
+npm install ts-node-dev -D
+
+instalando dependências: yarn add express ( do import express npm install @types/express ou yarn add...)  
+
+ferramenta para o método post: insomnia.rest
+
+// GET: Buscar ou listar uma informação
+// POST: Criar alguma nova informação 
+// PUT: Atualizar uma informação existente
+// Delete: Deletar uma informação existente
+
+// Corpo (Request Body): Dados para criação ou atualização de um registro
+// Route Params: Identificar qual recurso eu quero atualizar ou deletar
+// Query Params: Paginação, filtros, ordenação
+
+Identificar os casos de uso
+
+Instalando o banco sqlite: yarn add knex sqlite3
+
+Para o migrations: adcionar mais uma linha em scripts em package.json: "knex:migrate": "knex --knexfile knexfile.ts". dps dá o comando para criar a tabela de users: yarn knex, yarn knex:migrate
+
+Dependências para o front e back- end se comunicar mas funcionando em portas diferentes:yarn add cors e depois,  yarn add @types/cors -D 
+
+Conexão Front C/ Back end: yarn add axios
